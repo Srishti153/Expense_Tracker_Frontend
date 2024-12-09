@@ -1,0 +1,84 @@
+/* Main container for the dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 250px; /* Space for the sidebar */
+    width: calc(100% - 250px); /* Full width except sidebar */
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+  }
+  
+  /* Top cards section */
+  .top-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%; /* Full width */
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1; /* Make cards take up equal width */
+  }
+  
+  /* Chart container */
+  .chart-card {
+    width: 100%; /* Full width */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  /* History and stats section */
+  .history-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%; /* Full width */
+  }
+  
+  .card.recent-history,
+  .card.stats {
+    flex: 1; /* Equal width for history and stats */
+  }
+  
+  /* Centering text and setting colors */
+  h3, h4 {
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  p.positive {
+    color: green;
+  }
+  
+  p.negative {
+    color: red;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .top-cards,
+    .history-cards {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

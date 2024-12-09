@@ -1,0 +1,41 @@
+.sidebar {
+  width: 250px;
+  background-color: #1e293b;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center; /* Align the image and text vertically */
+  justify-content: center; /* Center the content horizontally */
+  gap: 10px; /* Add space between the image and text */
+  margin-bottom: 30px;
+  transform: translateX(-15px); /* Move the header slightly to the left */
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #334155;
+}
